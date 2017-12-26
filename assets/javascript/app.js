@@ -4,45 +4,85 @@ var maryPoints = 0;
 var paulPoints = 0;
 // set array of possible comments from the judges
 var maryBerryArray = [{
-    comment: "scrummy!",
+    comment: "It’s not quite baked through",
     points: 1
   },
   {
-    comment: "comment2",
-    points: 2
+    comment: "That is a perfect sponge",
+    points: 5
   },
   {
-    comment: "comment3",
-    points: 3
-  },
-  {
-    comment: "comment4",
+    comment: "The flavor is really beautiful",
     points: 4
   },
   {
-    comment: "comment5",
+    comment: "It looks unfinished",
+    points: 2
+  },
+  {
+    comment: "You’ve got a smashing shine on your glaze",
     points: 5
+  },
+	{
+    comment: "I think you were very brave, but unfortunately it didn’t pay off",
+    points: 3
+  },
+	{
+    comment: "All the flavors and textures go together",
+    points: 4
+  },
+	{
+    comment: "All those flavors are a perfect marriage",
+    points: 5
+  },
+	{
+    comment: "It’s all a little informal but the flavor is there",
+    points: 3
+  },
+	{
+    comment: "Your icing is too runny",
+    points: 1
   }
 ];
 
 var paulHollywoodArray = [{
-    comment: "Raw!",
-    points: 1
-  },
-  {
-    comment: "comment2",
+    comment: "Flavors good. Textures awful.",
     points: 2
   },
   {
-    comment: "comment3",
+    comment: "It’s quite close textured",
+    points: 1
+  },
+  {
+    comment: "That dough is raw",
+    points: 1
+  },
+  {
+    comment: "The flavor is there but the texture’s all wrong",
     points: 3
   },
   {
-    comment: "comment4",
+    comment: "You’ve got a beautiful genoese there",
     points: 4
   },
-  {
-    comment: "comment5",
+	{
+    comment: "I'm not getting any of the flavor",
+    points: 2
+  },
+	{
+    comment: "It's underbaked. Needed another 2 minutes.",
+    points: 1
+  },
+	{
+    comment: "It's got a soggy bottom",
+    points: 2
+  },
+	{
+    comment: "That’s lovely",
+    points: 4
+  },
+	{
+    comment: "*handshake*",
     points: 5
   }
 ];
@@ -89,13 +129,13 @@ function judging() {
   $(".mary-comment").text(maryBerryArray[maryRandom].comment);
 
   var paulRandom = Math.floor(Math.random() * paulHollywoodArray.length);
-  $(".paul-comment").text(paulHollywoodArray[paulRandom].comment);
+  $(".paul-comment").text('"' + paulHollywoodArray[paulRandom].comment + '"');
 
   var score = paulHollywoodArray[paulRandom].points + maryBerryArray[maryRandom].points;
   if (score < 4) {
     $(".game-result").text("You have to leave the tent...but we'll miss you so!")
   } else if (score < 8) {
-    $(".game-result").text("you've made it to the next week");
+    $(".game-result").text("You've made it to the next week!");
   } else if (score > 7) {
     $(".game-result").text("You're this week's star baker!");
   }

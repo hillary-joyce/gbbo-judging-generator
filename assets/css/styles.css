@@ -37,7 +37,7 @@ body {
   filter: blur(10px);
   width: 80%;
   height: 500px;
-  margin: 10% auto;
+  margin: 5% auto;
 }
 
 /************ PAGE HEADER **********/
@@ -119,11 +119,12 @@ body {
   width: 80%;
   padding: 10px;
   margin: 10px auto;
-  background: rgba(221, 175, 164, 0.6);
+  background: rgba(239, 187, 174, 0.75);
   border-radius: 30px;
-  font-size: 3vh;
+  font-size: 3.5vh;
 }
 
 .paul-comment, .mary-comment {
-  font-size: 2vh;
+  font-size: 3.5vh;
+  display: block;
 }
