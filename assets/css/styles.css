@@ -128,3 +128,48 @@ body {
   font-size: 3.5vh;
   display: block;
 }
+
+/****** MEDIA QUERIES ********/
+@media only screen and (max-width: 480px) {
+  .button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  .main-title {
+    font-size: 7vh;
+    width: 100%;
+  }
+  .sub-title, .game-result-div {
+    font-size: 3vh;
+  }
+
+  .sub-title {
+    background: rgba(255,255,255,0.6);
+    margin-bottom: 0;
+    margin-top: 10px;
+    border-top: 4px solid white;
+  }
+
+  .how-to-play {
+    font-size: 2.5vh;
+    border-bottom: 4px solid white;
+    background: rgba(255,255,255,0.7);
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  /******* MAIN DIVS ******/
+
+  /******* GAME READY TEXT*****/
+  .on-your-marks {
+    display: none;
+    padding-top: 200px;
+    height: 283px;
+  }
+  #onYourMarks, #getSet, #bake {
+    display: none;
+    font-size: 9vh;
+    margin-top: 50px;
+    text-shadow: 0px 0px 3px black;
+  }
+}
