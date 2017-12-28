@@ -126,7 +126,7 @@ function onYourMarks() {
 function judging() {
 	$(".judging-result-div").fadeIn(400);
   var maryRandom = Math.floor(Math.random() * maryBerryArray.length);
-  $(".mary-comment").text(maryBerryArray[maryRandom].comment);
+  $(".mary-comment").text('"' + maryBerryArray[maryRandom].comment + '"');
 
   var paulRandom = Math.floor(Math.random() * paulHollywoodArray.length);
   $(".paul-comment").text('"' + paulHollywoodArray[paulRandom].comment + '"');

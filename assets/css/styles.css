@@ -130,46 +130,72 @@ body {
 }
 
 /****** MEDIA QUERIES ********/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .button {
     font-size: 16px;
     padding: 5px 10px;
+    margin-top: 40px;
   }
   .main-title {
     font-size: 7vh;
     width: 100%;
   }
-  .sub-title, .game-result-div {
-    font-size: 3vh;
-  }
 
   .sub-title {
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.75);
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 40px;
     border-top: 4px solid white;
+    font-size: 28px;
   }
 
   .how-to-play {
-    font-size: 2.5vh;
+    font-size: 20px;
     border-bottom: 4px solid white;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.75);
     width: 100%;
     margin: 0 auto;
     padding: 10px 0;
   }
   /******* MAIN DIVS ******/
+  /********* MAIN GAME PLAY CONTAINER ********/
 
-  /******* GAME READY TEXT*****/
-  .on-your-marks {
-    display: none;
-    padding-top: 200px;
-    height: 283px;
+  .judge-div {
+    width: 50%;
+    display: block;
+    float: left;
+    height: 300px;
+    margin-top: 10px;
   }
-  #onYourMarks, #getSet, #bake {
-    display: none;
-    font-size: 9vh;
-    margin-top: 50px;
-    text-shadow: 0px 0px 3px black;
+
+  .judge-div img {
+    height: 120px;
+    border: 5px solid #B3EFCA;
+  }
+
+  .comment-result {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    background: rgba(239, 187, 174, 0.75);
+    border-radius: 30px;
+    font-size: 3.5vh;
+  }
+
+  .paul-comment, .mary-comment {
+    font-size: 20px;
+  }
+
+  .game-result{
+    background: rgba(255,255,255,0.75);
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    font-size: 28px;
+    height: 75px;
+    clear: both;
+    padding: 10px;
+  }
+  #playAgain {
+    margin-top: 10px;
   }
 }
