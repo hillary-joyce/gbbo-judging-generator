@@ -33,7 +33,7 @@ body {
 
 .frosted-backdrop {
   background: inherit;
-  box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.6);
   filter: blur(10px);
   width: 80%;
   height: 500px;
